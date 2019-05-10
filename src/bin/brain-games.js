@@ -1,5 +1,5 @@
 #!/usr/local/bin/node
 
-import greetings from '../greetings';
+import helloGame from '../common/launchGame';
 
-greetings();
+helloGame();

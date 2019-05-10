@@ -1,6 +1,6 @@
 {
     "name": "bg-nb",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "",
     "main": "index.js",
     "files": [
@@ -27,7 +27,8 @@
     },
     "bin": {
         "brain-games": "dist/bin/brain-games.js",
-        "brain-even": "dist/bin/brain-even.js"
+        "brain-even": "dist/bin/brain-even.js",
+        "brain-calc": "dist/bin/brain-calc.js"
     },
     "devDependencies": {
         "eslint": "^5.16.0",
