@@ -4,3 +4,4 @@
 [![Build Status](https://travis-ci.com/Vokvorob/project-lvl1-s486.svg?branch=master)](https://travis-ci.com/Vokvorob/project-lvl1-s486)
 [![asciicast](https://asciinema.org/a/Z0PmPptiKO0kIIT8sM3eZ3rjm.svg)](https://asciinema.org/a/Z0PmPptiKO0kIIT8sM3eZ3rjm?autoplay=1)
 [![asciicast](https://asciinema.org/a/v0Ff89BZuJ9KHPb2yHU4DaDnH.svg)](https://asciinema.org/a/v0Ff89BZuJ9KHPb2yHU4DaDnH?autoplay=1)
+[![asciicast](https://asciinema.org/a/BIP0nYrJ6j1zgT1UiLWXSRse.svg)](https://asciinema.org/a/BIP0nYrJ6j1zgT1UiLWXSRse?autoplay=1)
