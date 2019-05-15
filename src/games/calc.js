@@ -1,6 +1,6 @@
 import launchGame from '../common/launchGame'
+import { randomNum } from '../common/utils'
 
-const randomNum = (min, max) => Math.floor(Math.random() * max) + min;
 const randomOperator = () => {
     const operatorIndex = randomNum(1, 3);
     switch (operatorIndex) {
@@ -33,6 +33,4 @@ const game = () => {
     return [question, correctAnswer];
 };
 
-export default () => {
-    launchGame(game, 'What is the result of the expression?');
-};
+export default () => launchGame(game, 'What is the result of the expression?');
