@@ -12,4 +12,6 @@ start Brain-GCD
 [![asciicast](https://asciinema.org/a/fbj0SWfPe0hjeDcIMofRhobd1.svg)](https://asciinema.org/a/fbj0SWfPe0hjeDcIMofRhobd1?autoplay=1)
 start Brain-Progression
 [![asciicast](https://asciinema.org/a/cqkGHJxKNXIgm0KJJpDwu6tx6.svg)](https://asciinema.org/a/cqkGHJxKNXIgm0KJJpDwu6tx6?autoplay=1)
+start Brain-Prime
+[![asciicast](https://asciinema.org/a/0lbu4nCcNB4Aji6zLZdKhlDsT.svg)](https://asciinema.org/a/0lbu4nCcNB4Aji6zLZdKhlDsT?autoplay=1)
 
