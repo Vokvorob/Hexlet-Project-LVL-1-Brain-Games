@@ -1,9 +1,9 @@
 import launchGame from '../common/launchGame'
 import { randomNum } from '../common/utils'
 
-const progression = (initialNumber, progressionStep) => {
+const progression = (initialNumber, progressionStep, lengthProgression) => {
     let arr = [initialNumber];
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < lengthProgression; i++) {
         arr.push(progressionStep + arr[i - 1]);
     }
     const missNumberProgression = randomNum(0, 9);
@@ -16,7 +16,8 @@ const progression = (initialNumber, progressionStep) => {
 const game = () => {
     const initialNumber = randomNum(1, 10);
     const progressionStep = randomNum(4, 12);
-    const [arr, num] = progression(initialNumber, progressionStep);
+    const lengthProgression = 10;
+    const [arr, num] = progression(initialNumber, progressionStep, lengthProgression);
     const question = arr.join(" ");
     const correctAnswer = String(num);
     return [question, correctAnswer];
