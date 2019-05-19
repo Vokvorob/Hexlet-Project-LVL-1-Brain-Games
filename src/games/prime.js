@@ -1,19 +1,21 @@
-import launchGame from '../common/launchGame'
-import { randomNum } from '../common/utils'
+import launchGame from '../launchGame';
+import { randomNum } from '../utils';
 
-const isPrime = num => {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return 'no';
-        }
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isPrime = (num) => {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return 'no';
     }
-    return 'yes';
+  }
+  return 'yes';
 };
 
 const game = () => {
-    const question = randomNum(0, 3571);
-    const correctAnswer = isPrime(question);
-    return [question, correctAnswer];
+  const question = randomNum(0, 3571);
+  const correctAnswer = isPrime(question);
+  return [question, correctAnswer];
 };
 
-export default () => launchGame(game, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+export default () => launchGame(game, description);

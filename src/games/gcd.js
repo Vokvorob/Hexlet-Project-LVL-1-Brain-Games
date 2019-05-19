@@ -1,19 +1,25 @@
-import launchGame from '../common/launchGame'
-import { randomNum } from '../common/utils'
+import launchGame from '../launchGame';
+import { randomNum } from '../utils';
 
-const findDivisor = (div, a, b) => {
-    if (a % div === 0 && b % div === 0) {
-        return div;
+const description = 'Find the greatest common divisor of given numbers.';
+
+const findDivisor = (a, b) => {
+  const div = a < b ? a : b;
+  const iter = (num) => {
+    if (a % num === 0 && b % num === 0) {
+      return num;
     }
-    return findDivisor(div - 1, a, b);
+    return iter(num - 1);
+  };
+  return iter(div);
 };
 
 const game = () => {
-    const a = randomNum(1, 100);
-    const b = randomNum(1, 100);
-    const correctAnswer = String(findDivisor(a < b ? a : b, a, b));
-    const question = `${a} ${b}`;
-    return [question, correctAnswer];
+  const a = randomNum(1, 100);
+  const b = randomNum(1, 100);
+  const correctAnswer = String(findDivisor(a, b));
+  const question = `${a} ${b}`;
+  return [question, correctAnswer];
 };
 
-export default () => launchGame(game, 'Find the greatest common divisor of given numbers.');
+export default () => launchGame(game, description);

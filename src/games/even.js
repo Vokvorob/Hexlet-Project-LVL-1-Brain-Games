@@ -1,12 +1,12 @@
-import launchGame from '../common/launchGame'
-import { randomNum } from '../common/utils'
+import launchGame from '../launchGame';
+import { randomNum, isEven } from '../utils';
 
-const checkEven = (num) => num % 2 === 0 ? 'yes' : 'no';
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const game = () => {
-    const question = randomNum(1, 20);
-    const correctAnswer = checkEven(question);
-    return [question, correctAnswer];
+  const question = randomNum(1, 20);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export default () => launchGame(game, 'Answer "yes" if number even otherwise answer "no".');
+export default () => launchGame(game, description);

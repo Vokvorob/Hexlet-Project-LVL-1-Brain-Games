@@ -1,5 +1,5 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 
-import helloGame from '../common/launchGame';
+import helloGame from '../launchGame';
 
 helloGame();

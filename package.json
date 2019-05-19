@@ -1,8 +1,9 @@
 {
     "name": "bg-nb",
-    "version": "1.5.2",
-    "description": "",
-    "main": "index.js",
+    "version": "2.0.0",
+    "description": "Hexlet Brain-Games",
+    "keywords": ["hexlet", "brain-games", "project-lvl1"],
+    "main": "",
     "files": [
         "dist"
     ],
@@ -14,6 +15,10 @@
     "author": "Nikita Borovkov",
     "license": "ISC",
     "dependencies": {
+        "hexlet-pairs": "^1.0.8",
+        "readline-sync": "^1.4.9"
+    },
+    "devDependencies": {
         "@babel/cli": "^7.4.4",
         "@babel/core": "^7.4.4",
         "@babel/node": "^7.2.2",
@@ -22,8 +27,9 @@
         "babel-eslint": "^10.0.1",
         "eslint-config-airbnb-base": "^13.1.0",
         "eslint-plugin-import": "^2.17.2",
-        "hexlet-pairs": "^1.0.8",
-        "readline-sync": "^1.4.9"
+        "eslint": "^5.16.0",
+        "npx-run": "^2.1.2"
+
     },
     "bin": {
         "brain-games": "dist/bin/brain-games.js",
@@ -32,9 +38,5 @@
         "brain-gcd": "dist/bin/brain-gcd.js",
         "brain-progression": "dist/bin/brain-progression.js",
         "brain-prime": "dist/bin/brain-prime.js"
-    },
-    "devDependencies": {
-        "eslint": "^5.16.0",
-        "npx-run": "^2.1.2"
     }
 }

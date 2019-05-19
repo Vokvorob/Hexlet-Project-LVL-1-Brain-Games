@@ -1,3 +1,3 @@
-import launchGame from '../common/launchGame';
+import launchGame from '../launchGame';
 
 launchGame();
