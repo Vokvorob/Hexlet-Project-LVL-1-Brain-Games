@@ -1,7 +1,8 @@
 import launchGame from '../launchGame';
-import { randomNum } from '../utils';
+import randomNum from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
+const gameRounds = 3;
 
 const findDivisor = (a, b) => {
   const div = a < b ? a : b;
@@ -22,4 +23,4 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-export default () => launchGame(game, description);
+export default () => launchGame(game, gameRounds, description);

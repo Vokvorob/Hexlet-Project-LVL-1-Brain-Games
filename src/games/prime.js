@@ -1,21 +1,25 @@
 import launchGame from '../launchGame';
-import { randomNum } from '../utils';
+import randomNum from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRounds = 3;
 
 const isPrime = (num) => {
-  for (let i = 2; i < num; i += 1) {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i < Math.sqrt(num); i += 1) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const game = () => {
   const question = randomNum(0, 3571);
-  const correctAnswer = isPrime(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => launchGame(game, description);
+export default () => launchGame(game, gameRounds, description);

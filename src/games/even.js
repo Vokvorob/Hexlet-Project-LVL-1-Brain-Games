@@ -1,7 +1,9 @@
 import launchGame from '../launchGame';
-import { randomNum, isEven } from '../utils';
+import randomNum from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
+const gameRounds = 3;
+const isEven = num => num % 2 === 0;
 
 const game = () => {
   const question = randomNum(1, 20);
@@ -9,4 +11,4 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-export default () => launchGame(game, description);
+export default () => launchGame(game, gameRounds, description);
