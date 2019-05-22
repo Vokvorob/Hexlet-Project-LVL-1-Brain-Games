@@ -2,7 +2,6 @@ import launchGame from '../launchGame';
 import randomNum from '../utils';
 
 const description = 'What is the result of the expression?';
-const gameRounds = 3;
 
 const calc = (a, b) => {
   const randomOperation = randomNum(1, 3);
@@ -26,4 +25,4 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-export default () => launchGame(game, gameRounds, description);
+export default () => launchGame(game, description);
