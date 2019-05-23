@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const gameRounds = 3;
 const launchGame = (game) => {
-  const gameRounds = 3;
   for (let i = 0; i < gameRounds; i += 1) {
     const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);
@@ -24,7 +24,8 @@ export default (game, description) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log('');
-  if (launchGame(game)) console.log(`Congratulations, ${name}!`);
+  const hasWon = launchGame(game);
+  if (hasWon) console.log(`Congratulations, ${name}!`);
   else {
     console.log(`Let's try again, ${name}!`);
   }
